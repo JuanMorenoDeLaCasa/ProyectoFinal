@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/allerta</item>
+        <item>@font/baloo_paaji_2</item>
+        <item>@font/expletus_sans</item>
+        <item>@font/heebo_thin</item>
+        <item>@font/mandali</item>
+        <item>@font/niramit_extralight</item>
+        <item>@font/orienta</item>
+        <item>@font/prompt_thin</item>
+        <item>@font/red_rose_light</item>
+        <item>@font/space_mono</item>
+    </array>
+</resources>
