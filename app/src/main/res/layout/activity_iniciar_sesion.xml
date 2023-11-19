@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#15232e"
     tools:context=".IniciarSesion">
 
     <LinearLayout
@@ -19,7 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2.5"
+            android:layout_weight="3"
             android:clipToPadding="true"
             android:orientation="horizontal">
 
@@ -28,10 +27,10 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/NubeLogin"
+                    android:id="@+id/NubeIniciarSesion"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="30dp"
                     android:cropToPadding="false"
                     app:srcCompat="@drawable/nube1" />
             </FrameLayout>
@@ -49,23 +48,23 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/H1Login"
+                android:id="@+id/H1IniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:fontFamily="@font/space_mono"
-                android:text="Crear Una Cuenta"
+                android:text="Iniciar Sesión"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="#b9cad7"
                 android:textSize="34sp" />
 
             <TextView
-                android:id="@+id/H2Login"
+                android:id="@+id/H2IniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="3"
                 android:fontFamily="@font/space_mono"
-                android:text="Registrate para empezar!"
+                android:text="Inicia sesión para empezar!"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="#b9cad7"
                 android:textSize="17sp" />
@@ -82,35 +81,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/NombreLogin"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="0.4"
-                android:fontFamily="@font/space_mono"
-                android:paddingLeft="5dp"
-                android:text="Nombre*"
-                android:textColor="#b9cad7" />
-
-            <EditText
-                android:id="@+id/CampoNombreLogin"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                android:layout_weight="1"
-                android:background="@drawable/edit_text"
-                android:ems="10"
-                android:fontFamily="@font/space_mono"
-                android:gravity="center_vertical"
-                android:hint="Introduce tu nombre"
-                android:inputType="text"
-                android:paddingLeft="20dp"
-                android:textColor="#4A5D6C"
-                android:textColorHint="#34424d"
-                android:textSize="14sp" />
-
-            <TextView
-                android:id="@+id/EmailLogin"
+                android:id="@+id/EmailIniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.4"
@@ -120,7 +91,7 @@
                 android:textColor="#b9cad7" />
 
             <EditText
-                android:id="@+id/CampoEmailLogin"
+                android:id="@+id/CampoEmailIniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
@@ -137,7 +108,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/ContraseñaLogin"
+                android:id="@+id/ContraseñaIniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.4"
@@ -147,7 +118,7 @@
                 android:textColor="#b9cad7" />
 
             <EditText
-                android:id="@+id/CampoConstraseñaLogin"
+                android:id="@+id/CampoConstraseñaIniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
@@ -165,7 +136,7 @@
                 android:textSize="14sp" />
 
             <Button
-                android:id="@+id/BotonLogin"
+                android:id="@+id/BotonIniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginTop="10dp"
@@ -174,7 +145,7 @@
                 android:backgroundTint="#2c67bf"
                 android:backgroundTintMode="src_over"
                 android:fontFamily="@font/space_mono"
-                android:text="Registrarse"
+                android:text="Iniciar Sesión"
                 app:cornerRadius="10dp" />
         </LinearLayout>
 
@@ -184,34 +155,34 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginBottom="20dp"
-            android:layout_weight="0.6"
+            android:layout_weight="2"
             android:clipToPadding="true"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/H3Login"
+                android:id="@+id/H3IniciarSesion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/space_mono"
                 android:gravity="center_horizontal"
                 android:paddingTop="20dp"
-                android:text="Ya tienes una cuenta?"
+                android:text="No tienes una cuenta?"
                 android:textColor="#b9cad7"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/EnlaceIniciarSesion"
-                android:layout_width="wrap_content"
+                android:id="@+id/EnlaceRegistrarse"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
-                android:contextClickable="false"
                 android:fontFamily="@font/space_mono"
                 android:gravity="center_horizontal"
-                android:text="Iniciar Sesión"
+                android:text="Registrarse"
                 android:textColor="#2C67BE"
                 android:textSize="14sp" />
 
         </LinearLayout>
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
