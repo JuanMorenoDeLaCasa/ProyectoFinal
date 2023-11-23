@@ -5,13 +5,13 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.proyectofinal.databinding.ActivityIniciarSesionBinding
-import java.security.Principal
 
 class IniciarSesion : AppCompatActivity() {
 
     private lateinit var binding: ActivityIniciarSesionBinding
 
-    // Definir constantes de usuario y contraseña
+    // Constantes de usuario y contraseña
+
     private val MYEMAIL = "correo"
     private val MYPASS = "1234"
 
@@ -25,13 +25,15 @@ class IniciarSesion : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Agregar lógica de comprobación al hacer clic en el botón Validar
+        // Lógica de comprobación al hacer clic en el botón Validar
+
         binding.BotonIniciarSesion.setOnClickListener {
             val contraseña = binding.CampoContraseA.text.toString()
             val email = binding.CampoEmailIniciarSesion.text.toString()
 
 
             // Comprobar usuario y contraseña
+
             if (email == MYEMAIL && contraseña == MYPASS) {
                 // Si la validación es correcta, iniciar el Activity principal
                 val intent = Intent(this, Principal::class.java)
